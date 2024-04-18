@@ -11,6 +11,7 @@
 		63F21C732BB1DEB200343B9D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63F21C722BB1DEB200343B9D /* ContentView.swift */; };
 		63F21C752BB1DEB300343B9D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 63F21C742BB1DEB300343B9D /* Assets.xcassets */; };
 		63F21C792BB1DEB400343B9D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 63F21C782BB1DEB400343B9D /* Preview Assets.xcassets */; };
+		63F548D32BCD59AF0064B778 /* AddView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63F548D22BCD59AF0064B778 /* AddView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +21,7 @@
 		63F21C742BB1DEB300343B9D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		63F21C762BB1DEB400343B9D /* iExpense.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = iExpense.entitlements; sourceTree = "<group>"; };
 		63F21C782BB1DEB400343B9D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		63F548D22BCD59AF0064B778 /* AddView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,7 @@
 			children = (
 				63F21C702BB1DEB200343B9D /* iExpenseApp.swift */,
 				63F21C722BB1DEB200343B9D /* ContentView.swift */,
+				63F548D22BCD59AF0064B778 /* AddView.swift */,
 				63F21C742BB1DEB300343B9D /* Assets.xcassets */,
 				63F21C762BB1DEB400343B9D /* iExpense.entitlements */,
 				63F21C772BB1DEB400343B9D /* Preview Content */,
@@ -141,6 +144,7 @@
 			files = (
 				63F21C732BB1DEB200343B9D /* ContentView.swift in Sources */,
 				63F21C712BB1DEB200343B9D /* iExpenseApp.swift in Sources */,
+				63F548D32BCD59AF0064B778 /* AddView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

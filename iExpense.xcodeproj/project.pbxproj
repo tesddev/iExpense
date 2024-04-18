@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		63588EAB2BD15413002886A7 /* Expenses.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63588EAA2BD15413002886A7 /* Expenses.swift */; };
 		63F21C712BB1DEB200343B9D /* iExpenseApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63F21C702BB1DEB200343B9D /* iExpenseApp.swift */; };
 		63F21C732BB1DEB200343B9D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63F21C722BB1DEB200343B9D /* ContentView.swift */; };
 		63F21C752BB1DEB300343B9D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 63F21C742BB1DEB300343B9D /* Assets.xcassets */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		63588EAA2BD15413002886A7 /* Expenses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Expenses.swift; sourceTree = "<group>"; };
 		63F21C6D2BB1DEB200343B9D /* iExpense.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iExpense.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		63F21C702BB1DEB200343B9D /* iExpenseApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iExpenseApp.swift; sourceTree = "<group>"; };
 		63F21C722BB1DEB200343B9D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -60,6 +62,7 @@
 				63F21C742BB1DEB300343B9D /* Assets.xcassets */,
 				63F21C762BB1DEB400343B9D /* iExpense.entitlements */,
 				63F21C772BB1DEB400343B9D /* Preview Content */,
+				63588EAA2BD15413002886A7 /* Expenses.swift */,
 			);
 			path = iExpense;
 			sourceTree = "<group>";
@@ -142,6 +145,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				63588EAB2BD15413002886A7 /* Expenses.swift in Sources */,
 				63F21C732BB1DEB200343B9D /* ContentView.swift in Sources */,
 				63F21C712BB1DEB200343B9D /* iExpenseApp.swift in Sources */,
 				63F548D32BCD59AF0064B778 /* AddView.swift in Sources */,

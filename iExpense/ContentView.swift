@@ -11,24 +11,55 @@ struct ContentView: View {
     
     @State private var expenses = Expenses()
     @State private var showingAddExpense = false
-
+    
     var body: some View {
         NavigationStack {
             VStack {
                 List {
-                    ForEach(expenses.items) { item in
-                        HStack {
-                            VStack(alignment: .leading) {
-                                Text(item.name)
-                                    .font(.headline)
-                                Text(item.type)
+                    if !expenses.personalItems.isEmpty {
+                        Section("Personal") {
+                            ForEach(expenses.personalItems) { item in
+                                HStack {
+                                    VStack(alignment: .leading) {
+                                        Text(item.name)
+                                            .font(.headline)
+                                        Text(item.type)
+                                    }
+                                    
+                                    Spacer()
+                                    Text(item.amount, format: .currency(code: "USD"))
+                                }
                             }
-
-                            Spacer()
-                            Text(item.amount, format: .currency(code: "USD"))
+                            .onDelete { indices in
+                                let indexesToDelete = Array(indices)
+                                if let firstIndex = indexesToDelete.first {
+                                    removeItemsWith(expenses.personalItems[firstIndex].id)
+                                }
+                            }
                         }
                     }
-                    .onDelete(perform: removeItems)
+                    if !expenses.businessItems.isEmpty {
+                        Section("Business") {
+                            ForEach(expenses.businessItems) { item in
+                                HStack {
+                                    VStack(alignment: .leading) {
+                                        Text(item.name)
+                                            .font(.headline)
+                                        Text(item.type)
+                                    }
+                                    
+                                    Spacer()
+                                    Text(item.amount, format: .currency(code: "USD"))
+                                }
+                            }
+                            .onDelete { indices in
+                                let indexesToDelete = Array(indices)
+                                if let firstIndex = indexesToDelete.first {
+                                    removeItemsWith(expenses.businessItems[firstIndex].id)
+                                }
+                            }
+                        }
+                    }
                 }
                 .navigationTitle("iExpense")
             }
@@ -45,6 +76,10 @@ struct ContentView: View {
     
     func removeItems(at offsets: IndexSet) {
         expenses.items.remove(atOffsets: offsets)
+    }
+    
+    func removeItemsWith(_ id: UUID) {
+        expenses.items = expenses.items.filter {$0.id != id}
     }
 }
 

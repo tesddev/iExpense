@@ -2,7 +2,7 @@
 //  Expenses.swift
 //  iExpense
 //
-//  Created by GIGL-MAC on 18/04/2024.
+//  Created by Tes on 18/04/2024.
 //
 
 import Foundation

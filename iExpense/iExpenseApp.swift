@@ -2,7 +2,7 @@
 //  iExpenseApp.swift
 //  iExpense
 //
-//  Created by GIGL-MAC on 25/03/2024.
+//  Created by Tes on 25/03/2024.
 //
 
 import SwiftUI
